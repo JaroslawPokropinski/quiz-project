@@ -1,19 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import Redux from 'redux';
 import './App.css';
 
-class App extends Component {
+import StateContext from './state_context.js';
+
+
+const init = {
+  state: 'undefined',
+  socket: 'undefined',
+  info: {}
+}
+const reducer = (state=init, action) => {
+  let newState = state.state.handle(action);
+}
+
+
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.store = Redux.createStore(reducer);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <React.Fragment>
+        <StateContext />
+      </React.Fragment>
     );
   }
 }
