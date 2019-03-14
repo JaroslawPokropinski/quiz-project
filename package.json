@@ -4,14 +4,14 @@
   "private": true,
   "homepage": "https://jaroslawpokropinski.github.io/quiz-project/",
   "dependencies": {
-    "deep-freeze": "0.0.1",
-    "expect": "^23.4.0",
-    "primeicons": "^1.0.0-beta.10",
-    "primereact": "^2.0.0-beta.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0"
+    "deep-freeze": "^0.0.1",
+    "expect": "^24.5.0",
+    "primeicons": "^1.0.0",
+    "primereact": "^3.1.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "^2.1.8",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
